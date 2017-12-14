@@ -9,18 +9,18 @@ This can be used as a boilerplate for future projects so you don't have to write
 1. Install and start MongoDB - C:\"Program Files"\MongoDB\Server\3.6\bin\mongod.exe
 2. In package.json under scripts make sure you add this to use nodemon:
     
-    ...```json
+    ⋅⋅⋅```json
       "dev": "nodemon index.js"
     ```
     
-   ...Run nodemon to start the server, and refreshes itself on change - npm run dev
+   ⋅⋅⋅Run nodemon to start the server, and refreshes itself on change - npm run dev
 3. If you start a new project with this as a biolerplate you have to add a config.js with a custom secret:
     ...```javascript
     module.exports = {
       secret: 'Just a random string of numbers and letters'
     };
     ```
-    ...The secret __HAS TO__ be included in your .gitignore file
+    ⋅⋅⋅The secret __HAS TO__ be included in your .gitignore file
 
 ### Usage
 
