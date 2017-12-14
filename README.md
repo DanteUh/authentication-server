@@ -26,7 +26,7 @@ This can be used as a boilerplate for future projects so you don't have to write
 
 To setup different routes and endpoints for your project, see 'router.js'
 
-You can also look at Express [documentation]: https://expressjs.com/
+You can also look at Express documentation: https://expressjs.com/
 
 
 ### Libraries and Packages
