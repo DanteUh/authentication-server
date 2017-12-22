@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // DB Setup
 // We connect mongoose to MongoDB and creates a new database inside of mongo
@@ -17,6 +18,9 @@ mongoose.connect('mongodb://localhost:auth/auth');
 // app.use register things as middleware that any request is passed into
 // morgan is a logging framework
 app.use(morgan('combined'));
+// cors is a middleware and look for a cors request from another domain and let it through
+// You can also pass options to only allow requests from a specifik domain
+app.use(cors());
 // bodyparser is used to parse incoming request, here into json
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
